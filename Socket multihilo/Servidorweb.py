@@ -21,6 +21,7 @@ def client_handler(conn, addr):
         # leer index.html
         with open('index.html', 'r') as f:
             file_data = f.read()
+            print(file_data)
             f.close()
         
         # enviar respuesta http
